@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     fun suma(){
         val num1:EditText=findViewById(R.id.num1)
         val num2:EditText=findViewById(R.id.num2)
-        val result:TextView=findViewById(R.id.txt3)
+
 
         var num1parse=num1.text.toString()
         var num1entero=num1parse.toInt()
@@ -27,12 +27,10 @@ class MainActivity : AppCompatActivity() {
         var num2parse=num2.text.toString()
         var num2entero=num2parse.toInt()
 
+        val result:TextView=findViewById(R.id.txt3)
 
-
-
-
-
-        result.text=(" $num1 y $num2")
+        var suma1= num1entero+num2entero
+        result.text=(" $num1 y $num2 es = $suma1")
     }
 
 }
